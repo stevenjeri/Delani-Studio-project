@@ -47,3 +47,11 @@
 .project-name {
     display: none;
 }
+
+.contact {
+    background-image: url(../images/backgrounds/c_image.jpg);
+    width: 100%;
+    padding: 20%;
+    background-size: cover;
+    color: white;
+}
