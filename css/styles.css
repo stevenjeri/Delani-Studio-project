@@ -1,10 +1,11 @@
-.homepage {
+
+/* Home intro section */
+
+.home {
     background-image: url(../images/backgrounds/h_img.jpg);
     text-align: center;
     color: white;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 650px;
     background-size: cover;
 }
 
@@ -14,3 +15,11 @@
     margin-bottom: 5px;
     display: block;
 }
+
+/* About US section */
+
+.section-header {
+    line-height: 30px;
+    text-align: center;
+}
+
