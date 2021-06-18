@@ -44,3 +44,6 @@
     padding: 2px;
 }
 
+.project-name {
+    display: none;
+}
