@@ -1,0 +1,16 @@
+.homepage {
+    background-image: url(../images/backgrounds/h_img.jpg);
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+}
+
+.mouse_click {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display: block;
+}
