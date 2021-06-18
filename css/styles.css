@@ -26,3 +26,21 @@
     padding: 100px;
 }
 
+.design-text {
+    display: none;
+}
+
+.development-text {
+    display: none;
+}
+
+.product-text {
+    display: none;
+}
+
+.portfolio-images {
+    height: 280px;
+    max-width: 280px;
+    padding: 2px;
+}
+
