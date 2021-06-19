@@ -51,7 +51,22 @@
 .contact {
     background-image: url(../images/backgrounds/c_image.jpg);
     width: 100%;
-    padding: 20%;
-    background-size: cover;
-    color: white;
+    padding: 5%;
 }
+
+textarea[type=text] {
+    background-color: transparent;
+}
+
+input[type=text] {
+    background-color: transparent;
+    width: 90%;
+}
+
+input[type=email] {
+    background-color: transparent;
+    width: 90%;
+}
+
+
+
