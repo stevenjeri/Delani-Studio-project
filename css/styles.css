@@ -4,6 +4,8 @@
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    padding: 100px;
 }
 
 .mouse_click {
@@ -52,6 +54,7 @@
     background-image: url(../images/backgrounds/c_image.jpg);
     width: 100%;
     padding: 5%;
+    color: white;
 }
 
 textarea[type=text] {
@@ -67,6 +70,18 @@ input[type=email] {
     background-color: transparent;
     width: 90%;
 }
+
+footer .row {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+footer h4 {
+    line-height: 30px;
+}
+
 
 
 
