@@ -10,6 +10,26 @@ $(document).ready(function() {
         $("design-text").toggle();
     });
 
+    $(".development-img").clicks(function() {
+        $(".development-text").toggle();
+        $(".development-img").toggle();
+    });
+
+    $(".development-text").clicks(function() {
+        $(".development-img").toggle();
+        $("development-text").toggle();
+    });
+
+    $(".product-img").clicks(function() {
+        $(".product-text").toggle();
+        $(".product-img").toggle();
+    });
+    
+    $(".product-text").clicks(function() {
+        $(".product-img").toggle();
+        $("product-text").toggle();
+    });
+
     // Creating a Hover effect for the **Portfolio ** sections 
     $(".portfolio img").hover(function() {
         $(".col img").addClass(images);
