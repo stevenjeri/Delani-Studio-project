@@ -1,66 +1,29 @@
 // The 'What we do'  icons when clicked should toggle between the respective description of each icon.
 $(document).ready(function() {
-    $(".design-img").clicks(function() {
-        $(".design-text").toggle();
-        $(".design-img").toggle();
+    $(".what-we-do .col-md-4").click(function() {
+        $(this).find("img").toggle();
+        $(this).find(".description").toggle();
     });
-
-    $(".design-text").clicks(function() {
-        $(".design-img").toggle();
-        $("design-text").toggle();
-    });
-
-    $(".development-img").clicks(function() {
-        $(".development-text").toggle();
-        $(".development-img").toggle();
-    });
-
-    $(".development-text").clicks(function() {
-        $(".development-img").toggle();
-        $("development-text").toggle();
-    });
-
-    $(".product-img").clicks(function() {
-        $(".product-text").toggle();
-        $(".product-img").toggle();
-    });
-    
-    $(".product-text").clicks(function() {
-        $(".product-img").toggle();
-        $("product-text").toggle();
-    });
-    
 
     // Creating a Hover effect for the **Portfolio ** sections 
-    $(".portfolio img").hover(function() {
-        $(".col img").addClass(images);
-        $(".project-name").show();
+    $(".portfolio .col").mouseenter(function() {
+        $(this).find(".hover").show();
     });
 
-    $("form").submit(function(){
-        event.preventDefault();
-        let name = $("#inputName").val();
-        let email = $("#inputEmail").val();
-        let message = $("#inputMessage").val();
+    $(".portfolio .col").mouseleave(function() {
+        $(this).find(".hover").hide();
+    });
 
-        if (Name == '' || Email == '' || Mesaages == '') {
+    $("form").submit(function(event){
+        event.preventDefault();
+        let name = $("#name").val();
+        let email = $("#email").val();
+        let message = $("#message").val();
+
+        if (name == '' || email == '' || message == '') {
             alert('Please make sure you have filled in the form correctly!');
         } else {
-            alert('Hi' + Name + 'We have received your message. Thank you for reaching out to us.')
+            alert('Hi ' + name + ' We have received your message. Thank you for reaching out to us.')
         }
     });
-
-    // // using mail chimp API to track all the emails and messages from my users
-    // $('.submit').click(function() {
-    //     var Name = ('#mce-FNAME').val();
-    //     var Email = ('#mce-EMAIL').var();
-    //     var Message = ('#mce-MESSAGE');
-    //     var key = 'a03f70e020c00ae774bcfc88e587f559-us6';
-    //     if (Name == '' || Email == '' || Mesaages == '') {
-    //         alert('Please make sure you have filled in the form correctly!');
-    //     } else {
-    //         alert('Hi' + Name + 'We have received your message. Thank you for reaching out to us.')
-    //     }
-    // });
-
 });
