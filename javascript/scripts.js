@@ -29,6 +29,7 @@ $(document).ready(function() {
         $(".product-img").toggle();
         $("product-text").toggle();
     });
+    
 
     // Creating a Hover effect for the **Portfolio ** sections 
     $(".portfolio img").hover(function() {
@@ -36,16 +37,30 @@ $(document).ready(function() {
         $(".project-name").show();
     });
 
-    // using mail chimp API to track all the emails and messages from my users
-    $('.submit').click(function() {
-        var Name = ('#mce-FNAME').val();
-        var Email = ('#mce-EMAIL').var();
-        var Message = ('#mce-MESSAGE');
-        var key = 'a03f70e020c00ae774bcfc88e587f559-us6';
+    $("form").submit(function(){
+        event.preventDefault();
+        let name = $("#inputName").val();
+        let email = $("#inputEmail").val();
+        let message = $("#inputMessage").val();
+
         if (Name == '' || Email == '' || Mesaages == '') {
             alert('Please make sure you have filled in the form correctly!');
         } else {
             alert('Hi' + Name + 'We have received your message. Thank you for reaching out to us.')
         }
     });
+
+    // // using mail chimp API to track all the emails and messages from my users
+    // $('.submit').click(function() {
+    //     var Name = ('#mce-FNAME').val();
+    //     var Email = ('#mce-EMAIL').var();
+    //     var Message = ('#mce-MESSAGE');
+    //     var key = 'a03f70e020c00ae774bcfc88e587f559-us6';
+    //     if (Name == '' || Email == '' || Mesaages == '') {
+    //         alert('Please make sure you have filled in the form correctly!');
+    //     } else {
+    //         alert('Hi' + Name + 'We have received your message. Thank you for reaching out to us.')
+    //     }
+    // });
+
 });

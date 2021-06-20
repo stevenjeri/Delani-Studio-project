@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="javascript/scripts.js"></script>
     <title>Delani-Studio</title>
 </head>
 <body>
     <div class="container">
         <div class="home">
-            <img src="images/logo/logo.png" alt="logo">
+            <div id="logo">
+                <img src="images/logo/logo.png" alt="logo">
+            </div>
             <br><br>
-            <h1>WELCOME <br> TO DELANI STUDIO</h1>
-            <p>
-                AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT
-            </p>
+            <div id="welcome-message">
+                <h1>WELCOME <br> TO DELANI STUDIO</h1>
+                <p>
+                    AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT
+                </p>
+            </div>
             <br><br><br><br>
-            <img src="images/mouse_click.png" alt="mouse_click">
+            <div id="mouse-click">
+                <img src="images/mouse_click.png" alt="mouse_click">
+            </div>
         </div>
         <br><br>
         <div class="about-section section-header">
@@ -48,7 +55,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="design-img">
-                        <img src="images/services_icons/design_icon.png" alt="design_icon">
+                        <img src="images/services_icons/design_icon.png" alt="design_icon" class="design-img">
                     </div>
                     <div class="design-text">
                         <h3>DESIGN</h3>
@@ -78,8 +85,8 @@
                     <div class="product-img">
                         <img src="images/services_icons/product_icon.png" alt="product_icon">
                     </div>
-                    <h3>PRODUCT MANAGEMENT</h3>
                     <div class="product-text">
+                        <h3>PRODUCT MANAGEMENT</h3>
                         <p>
                             Planning and development is iterative. Because we are constantly coding and testing, 
                             the products we build are always ready to go live. <br> 
@@ -162,13 +169,13 @@
                         </div>
                     </div>
                     <br>
-                    <div class="form-group">
-                        <textarea type="text" class="form-control" required placeholder="Your message here..." id="textarea" cols="30" rows="9"></textarea>
+                    <div class="col">
+                        <textarea type="text" class="form-control" required placeholder="Your message here..." id="message" cols="30" rows="9"></textarea>
                     </div>
                 </div>
                 <br>
                 <div class="submit">
-                    <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    <input class="btn btn-primary" type="submit" value="Submit">
                 </div>
             </form>
         </div>
