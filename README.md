@@ -21,6 +21,6 @@ The website is still under development and may have some issues. Incase of any k
 ## Support and contact details
 If you want to contact me, email me on stevenjeri33@gmail.com
 ### License
-*This project is protected under [MIT License](License)*
+*This project is protected under [MIT LICENSE](LICENSE)*
 
 Copyright (c) 2021 **STEPHEN NJERI**
